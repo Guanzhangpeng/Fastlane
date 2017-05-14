@@ -1,0 +1,31 @@
+{
+    //#0: None              无
+    //#1: Infrequent/Mild   偶尔/轻微的
+    //#2: Frequent/Intense  频繁的/强烈的
+    //#卡通或幻想暴力
+    "CARTOON_FANTASY_VIOLENCE": 0,
+    //#现实暴力
+    "REALISTIC_VIOLENCE": 0,
+    //#大量露骨或残暴的现实暴力
+    "PROLONGED_GRAPHIC_SADISTIC_REALISTIC_VIOLENCE": 0,
+    //#低俗笑话
+    "PROFANITY_CRUDE_HUMOR": 0,
+    //#成人/性暗示题材
+    "MATURE_SUGGESTIVE": 0,
+    //#恐怖/惊悚题材
+    "HORROR": 0,
+    //#医学/医疗信息
+    "MEDICAL_TREATMENT_INFO": 0,
+    //#使用或提及烟、酒或毒品
+    "ALCOHOL_TOBACCO_DRUGS": 0,
+    //#模拟赌博
+    "GAMBLING": 0,
+    //#色情或裸露内容
+    "SEXUAL_CONTENT_NUDITY": 0,
+    //#色情及裸体画面
+    "GRAPHIC_SEXUAL_CONTENT_NUDITY": 0,
+    //#无限制的网站访问
+    "UNRESTRICTED_WEB_ACCESS": 0,
+    //#赌博和竞赛
+    "GAMBLING_CONTESTS": 0
+}
