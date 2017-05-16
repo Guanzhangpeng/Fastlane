@@ -70,7 +70,7 @@ produce(
 #通常这两项是通过AppFile加载,因此这里不需要手动指定;
 #username: "admin@sutongwang.cn",
 #   app_identifier: "gzp.fastlane.test",
-    app_name: "fastlane测试",
+    app_name: "XXXXX",
     language: "zh-Hans",
     app_version: "1.0",
     sku: "gzp.fstlane.test"
@@ -83,6 +83,7 @@ produce(
 # 指定输出目录
 gym(
     output_directory: './build',
+    scheme: "xxxxx",
     export_method:'app-store',
     configuration: 'Release',
     include_symbols: false,
