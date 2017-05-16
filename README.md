@@ -12,7 +12,7 @@
 
 ![](http://upload-images.jianshu.io/upload_images/1154433-021cc49e7c5ef341.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-###fastlane 简介
+### fastlane 简介
 
 Fastlane 是一个完全开源的项目,是一款为 `iOS` 和` Android` 开发者提供的自动化构建工具，它可以帮助开发者将 `App` 打包、签名、测试、发布、信息整理、提交 `App Store` 等工作完整的连接起来，实现完全自动化的工作流，如果使用得当，可以显著的提高开发者的开发效率。
 下面是fastlane的`GitHub`的链接和官方地址;
@@ -21,7 +21,7 @@ Fastlane 是一个完全开源的项目,是一款为 `iOS` 和` Android` 开发�
 
 [官方文档](https://docs.fastlane.tools)
 
-###fastlane 的使用
+### fastlane 的使用
 
 安装前请确保你已经安装了最新的 `Xcode command line tools`，通过在终端中执行下面的命令你可以进行检查。
 
@@ -74,9 +74,9 @@ $ fastlane init
 $ fastlane produce init
 ```
 
-###上传 ipa 到蒲公英或者Fir.im上
+### 上传 ipa 到蒲公英或者Fir.im上
 
-####上传到蒲公英上
+#### 上传到蒲公英上
 
 上传 ipa 的命令如下:
 
@@ -85,7 +85,7 @@ $ ipa distribute:pgyer -f path/to/ipa -u USER_KEY -a APP_KEY
 ```
 其中`USER_KEY` 和` APP_KEY` 可以在蒲公英上查到。
 
-####上传到Fir.im上
+#### 上传到Fir.im上
 
 利用 `fir-cli` 将打好的包，通过命令，上传到Fir.im平台上
 FIR.im CLI 使用 `ruby` 构建，只要安装相应 `ruby gem` 即可：
@@ -100,7 +100,7 @@ $ fir publish path/to/ipa -T YOUR_FIR_TOKEN
 ```
 其中 `YOUR_FIR_TOKEN` 可以在 `Fir.im` 上查到。
 
-####完整 Fastfile 代码
+#### 完整 Fastfile 代码
 
 ```
 fastlane_version "2.28.7"
@@ -165,7 +165,7 @@ CD 项目根目录，就可以通过 `fastlane archive type:0` 来调用打包�
 
 ![](http://upload-images.jianshu.io/upload_images/1154433-3a7fcf98455fbc4d.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-####Sigh
+#### Sigh
 
 如果你不确定证书目前是否可用，可以用`Sigh`自动生成获取证书。`Sigh`会自动根据`Appfile`里设置的`app_identifier`从`ADC(苹果开发者中心)`生成证书，并下载到项目根目录下(不是fastlane目录)，下载后自动安装。你可以通过指定`output_path`指定证书下载位置。
 
@@ -185,7 +185,7 @@ Gym 是 `Fastlane`家族的自动化编译工具，和其他工具配合的非�
 
 具体用法参考[GitHub](https://github.com/fastlane/fastlane/tree/master/gym) 或者[官方文档](https://docs.fastlane.tools/actions/#gym)
 
-####Deliver
+#### Deliver
 
 我们可以使用`deliver`命令将屏幕截图、元数据和 `IPA` 文件上传到` iTunes Connect`中，
 
@@ -236,7 +236,7 @@ Gym 是 `Fastlane`家族的自动化编译工具，和其他工具配合的非�
 
 `Deliverfile`的具体配置可以参考:[Deliverfile文档](https://github.com/fastlane/fastlane/blob/master/deliver/Deliverfile.md)
 
-###发布到App Store
+### 发布到App Store
 
 先看下lane
 
@@ -278,7 +278,7 @@ end
 
 配置完之后执行: `fastlane Release`
 
-###发布到CocoaPods公开库或者是私有库
+### 发布到CocoaPods公开库或者是私有库
 
 
 ```
@@ -336,7 +336,7 @@ pod_push(path: path,allow_warnings:true)
 其中`git_tag_exists`在`fastlane`的`Action`中并不存在的,所以需要我们自定义一个这样判断tag是否存在的Action,如果tag存在,则删除本地和远程的tag,具体是如何自定义的,可以参考我的[GitHub](https://github.com/Guanzhangpeng/Fastlane/blob/master/actions/remove_tag.rb)
 
 
-###写在最后
+### 写在最后
 
 我只想说码字真的很伤脑,尤其是想把一个东西讲明白就更烧脑
 
