@@ -83,6 +83,7 @@ produce(
 # 指定输出目录
 gym(
     output_directory: './build',
+    export_method:'app-store',
     configuration: 'Release',
     include_symbols: false,
     include_bitcode: true,
