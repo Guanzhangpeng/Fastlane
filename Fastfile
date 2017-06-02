@@ -118,15 +118,21 @@ lane :archive do |options|
     path = "./fastlane/" + time
     type = options[:type]
 
-# 不带adhoc参数，sigh会自动生成App Store证书(公司或个人帐户)
-sigh
+    # 使用证书创建私钥及签名
+    cert
+
+    # 不带adhoc参数，sigh会自动生成App Store证书(公司或个人帐户)
+     sigh(
+        adhoc: true,
+        force: true,
+    )
 
     if type == '1'
         name = '正式'
-        archive(path, name, 'kdzs', 'appstore')
+        archive(path, name, 'TargetName', 'appstore')
     elsif type == '0'
         name = '测试'
-        archive(path, name, 'kdzs', 'ad-hoc')
+        archive(path, name, 'TargetName', 'ad-hoc')
     # 上传至蒲公英
     #system 'ipa distribute:pgyer -f ./' + time + '/' + name + '.ipa -u your_user_key -a '
     # 上传至fir
