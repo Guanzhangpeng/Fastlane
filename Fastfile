@@ -27,6 +27,9 @@ cocoapods(
 # git commit -m "xxx"
     git_commit(path: ".", message: commitMsg)
 
+# git pull
+git_pull
+
 
 # git push origin master
     push_to_git_remote
